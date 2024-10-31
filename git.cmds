@@ -1,0 +1,23 @@
+# New Repo for Project
+# go to ~project folder
+git init
+cat .gitignore 
+git add .
+git commit -m 'first'
+
+### NOT QUITE RIGHT ...
+
+# if Repo DOES NOT already exists
+git remote add origin git@github.com:12379Monty/breimansworld.git
+git branch -M main
+git push -u origin main
+
+# if Repo does exist and want to change url 
+git remote set-url origin https://github.com/12379Monty/breimansworld
+git push --set-upstream origin master
+
+
+# hint: Updates were rejected because the remote contains 
+# work that you do hint: not have locally.
+git pull origin master
+

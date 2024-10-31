@@ -1,0 +1,68 @@
+
+
+processing file: _main.Rmd
+  |                                                                              |                                                                      |   0%  |                                                                              |.....                                                                 |   8%
+   inline R code fragments
+
+  |                                                                              |...........                                                           |  15%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                              |................                                                      |  23%
+  ordinary text without R code
+
+  |                                                                              |......................                                                |  31%
+label: unnamed-chunk-2 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                              |...........................                                           |  38%
+  ordinary text without R code
+
+  |                                                                              |................................                                      |  46%
+label: unnamed-chunk-3 (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                              |......................................                                |  54%
+  ordinary text without R code
+
+  |                                                                              |...........................................                           |  62%
+label: nice-fig (with options) 
+List of 5
+ $ fig.cap  : chr "Here is a nice figure!"
+ $ out.width: chr "80%"
+ $ fig.asp  : num 0.75
+ $ fig.align: chr "center"
+ $ fig.alt  : chr "Plot with connected points showing that vapor pressure of mercury increases exponentially as temperature increases."
+
+  |                                                                              |................................................                      |  69%
+  ordinary text without R code
+
+  |                                                                              |......................................................                |  77%
+label: nice-tab (with options) 
+List of 1
+ $ tidy: logi FALSE
+
+  |                                                                              |...........................................................           |  85%
+  ordinary text without R code
+
+  |                                                                              |.................................................................     |  92%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                              |......................................................................| 100%
+   inline R code fragments
+
+
+output file: _main.knit.md
+
+/usr/local/bin/pandoc +RTS -K512m -RTS _main.knit.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output _main.html --lua-filter /Users/fcollin/Library/R/4.0/library/bookdown/rmarkdown/lua/custom-environment.lua --lua-filter /Users/fcollin/Library/R/4.0/library/rmarkdown/rmarkdown/lua/pagebreak.lua --lua-filter /Users/fcollin/Library/R/4.0/library/rmarkdown/rmarkdown/lua/latex-div.lua --lua-filter /Users/fcollin/Library/R/4.0/library/rmarkdown/rmarkdown/lua/anchor-sections.lua --metadata-file /var/folders/jk/d24lm6n944q5y650lph85m7w0000gp/T//Rtmp3W9p2k/file8ffcb012a6e --wrap preserve --standalone --section-divs --table-of-contents --toc-depth 3 --template /Users/fcollin/Library/R/4.0/library/bookdown/templates/gitbook.html --highlight-style pygments --number-sections --css style.css --mathjax --include-in-header /var/folders/jk/d24lm6n944q5y650lph85m7w0000gp/T//Rtmp3W9p2k/rmarkdown-str8ffc65847097.html --citeproc 
+
+Output created: _book/index.html
+[1] "/Users/fcollin/Documents/Projects/Rstuff/probability/_book/index.html"
+Warning message:
+In do_once((if (is_R_CMD_check()) stop else warning)("The function xfun::isFALSE() will be deprecated in the future. Please ",  :
+  The function xfun::isFALSE() will be deprecated in the future. Please consider using base::isFALSE(x) or identical(x, FALSE) instead.
