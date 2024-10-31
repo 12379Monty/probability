@@ -10,10 +10,19 @@ bookdown:::bookdown_skeleton(getwd())
 nohup Rscript -e  "bookdown:::bookdown_skeleton(getwd())"    >  bookdown_skeleton.log  &
 
 ######
-# github action - https://www.hvitfeldt.me/blog/bookdown-netlify-github-actions/
+# github action - https://emilhvitfeldt.com/post/bookdown-netlify-github-actions/
 # API ID:  XXX
 # TOKEN: XXX
 
+# In R
+usethis::local_project(
+       path = ".",
+       force = TRUE,
+       setwd = TRUE,
+       quiet = getOption("usethis.quiet", default = FALSE),
+       .local_envir = parent.frame()
+     )
+     
 # In R
 usethis::use_github_action("bookdown.yaml")
 renv::snapshot()

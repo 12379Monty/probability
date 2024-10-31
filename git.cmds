@@ -8,7 +8,7 @@ git commit -m 'first'
 ### NOT QUITE RIGHT ...
 
 # if Repo DOES NOT already exists
-git remote add origin git@github.com:12379Monty/breimansworld.git
+git remote add origin git@github.com:12379Monty/probability.git
 git branch -M main
 git push -u origin main
 

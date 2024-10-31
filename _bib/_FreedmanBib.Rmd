@@ -1,0 +1,122 @@
+---
+title: "David A. Freedman on Statistical Models and Lines of Evidence - Bibliography"
+author: ""
+subtitle: ""
+#date: '`r format(Sys.time(), "%a %b %d %X %Y", tz="America/Los_Angeles")`'
+output:
+  html_document:
+    code_folding: hide
+    toc: false
+    fig_caption: yes
+    number_sections: no
+    css: ../_css/pandoc3.css
+    keep_md: true
+bibliography: [_Freedman.bib]
+#csl: ../../_csl/cell-numeric.csl
+#biblio-style: acm
+link-citations: true
+---
+
+<!-- Alternative format
+always_allow_html: yes
+params:
+  input_path: "."
+  output_path: "rendered"
+  version: "latest"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    toc_depth: 3
+    code_folding: hide
+    number_sections: true
+geometry: margin = 0.5 in
+-->
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Raleway:bold');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:bold');
+
+.main-container {
+  max-width: 1400px !important;
+}
+
+body{
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container { width: 1400px; }
+
+h2 {
+  background-color: #D4DAEC;
+    text-indent: 100px;
+}
+
+h3 {
+  background-color: #dddddd;
+}
+
+caption {
+  font-size: 20px;
+  caption-side: top;
+  text-indent: 30px;
+  background-color: lightgrey;
+  color: black;
+  margin-top: 5px;
+}
+
+g-table-intro h4 {
+  text-indent: 0px;
+}
+</style>
+
+
+# Notes {-}
+
+* [@Freedman:1991aa]:
+   - Snow's work on cholera is
+presented as a success story for scientific reasoning based on
+nonexperimental data. Failure stories are also discussed, and
+comparisons may provide some insight. In particular, this paper suggests 
+that statistical technique can seldom be an adequate substitute for 
+good design, relevant data, and testing predictions against reality 
+in a variety of settings.
+
+* [@Freedman:2008ab]:  
+   - Proportional-hazards models are frequently used to 
+analyze data from randomized controlled trials.
+This is a mistake. Randomization does not justify the models,
+which are rarely informative.  Simpler analytic methods should be used first.
+
+
+
+
+---
+nocite: '@*' 
+---
+
+<br/>
+
+
+***
+
+# References
+<div id="refs"></div>
+
+
+
+<!-- To run
+# nohup Rscript -e "knitr::knit2html('_FreedmanBib.Rmd')" > _FreedmanBib.log  &
+
+# Or
+# nohup Rscript -e "rmarkdown::render('_FreedmanBib.Rmd')" > _FreedmanBib.log  &
+
+-->
+

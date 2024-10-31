@@ -1,0 +1,57 @@
+--- 
+title:  Applied Statistics   <br> Adapted from Loe Breiman's Class Notes  <br> 1991
+#author: "Stat Student and The AB Crew with a little help from our friends at GRAIL"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+#output: bookdown::gitbook
+#output: bookdown::pdf_book
+documentclass: book
+bibliography: [_bib/_Ref/Breiman/_Breiman.bib, _bib/_Ref/Freedman/_Freedman.bib, _bib/packages.bib, _bib/_Ref/Gelman/_Gelman.bib, _bib/_Ref/Misc/_misc.bib, _bib/_Ref/Omics/_omics.bib]
+csl: _csl/cell-numeric.csl
+description: |
+  Lecture notes in applied statistics from a course
+  taught by Leo Breiman at the UC, Berkeley statistics 
+  department in 1991.
+# The HTML output format for this example is bookdown::gitbook,
+# set in the _output.yml file.
+link-citations: yes
+#github-repo: rstudio/bookdown-demo
+---
+
+
+```{js, echo = FALSE, eval=F}
+title=document.getElementById('header');
+title.innerHTML = '<img src="images/LB_cart.jpeg" alt="Test Image">' + title.innerHTML
+```
+
+<!--
+We must have some output here for index.html to be created
+-->
+
+# Proloque {-}
+
+![](images/LB_cart.jpeg){width=4in align=center}|  
+  
+
+> One problem in the field of statistics has been that everyone 
+> wants to be a theorist. Part of this is envy - 
+> the real sciences are based on mathematical theory. 
+> In the universities for this century, the glamor and prestige 
+> has been in mathematical models and theorems, 
+> no matter how irrelevant.
+> 
+>`r tufte::quote_footer('--- Leo Breiman (1995)')`
+
+
+```{r include=FALSE, eval=T, DO.ONCE=T}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
+
+<!--
+
+nohup Rscript -e "rmarkdown::render('index.Rmd')" > index.log  &
+
+-->
